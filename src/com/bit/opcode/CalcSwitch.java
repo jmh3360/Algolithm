@@ -6,18 +6,15 @@ public class CalcSwitch {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String[] arr = new String[5]; //count 갯수에는 0개라는 개념이 없어 실제 지정해주는 번호 값과 다르다
 		int num1 = 0, num2 = 0, result = 0;
 		String opcode = "", test = "";
 		boolean inputOk = true;
 		//ex 
 		
-		arr[0] ="첫 번째 숫자를 입력하세요.\n";		
-		arr[1] ="연산기호를 입력하세요.\n";		
-		arr[2] ="두 번째 숫자를 입력하세요.\n";		
-		arr[3] ="사칙연사자만 입력 가능";		
-		arr[4] = "%d %s %d = %d";	
-		
+		String[] arr = {"첫 번째 숫자를 입력하세요.\n", "연산기호를 입력하세요.\n"
+	  , "두 번째 숫자를 입력하세요.\n", "사칙연사자만 입력 가능", "%d %s %d = %d"}; 
+		//count 갯수에는 0개라는 개념이 없어 실제 지정해주는 번호 값과 다르다
+		//배열 작성 방식은 String[] arr = new String[?], String[] arr = {}; 방식이 있다.
 		System.out.print(arr[0]);
 		num1 = scan.nextInt();
 		System.out.print(arr[1]);
