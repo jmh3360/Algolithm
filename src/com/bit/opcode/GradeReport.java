@@ -3,11 +3,11 @@ package com.bit.opcode;
 import java.util.Scanner;
 
 public class GradeReport {
-	public static void main(String[] args) {
+	public void main() {
 		Scanner scan = new Scanner(System.in);
 		String name = "", credit = "";
 		int kor = 0, eng = 0, mat = 0, avg = 0;
-		String[] arr = new String[9];
+		String[] arr = new String[10];
 		arr[0] = "이름?\n";
 		arr[1] = "국어점수?\n";
 		arr[2] = "영어점수?\n";

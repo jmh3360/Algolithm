@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CalcSwitch {
 
-	public static void main(String[] args) {
+	public void main() {
 		Scanner scan = new Scanner(System.in);
 		int num1 = 0, num2 = 0, result = 0;
 		String opcode = "", test = "";
@@ -57,7 +57,7 @@ public class CalcSwitch {
 		}else {
 			test = String.format(arr[4], num1, opcode, num2, result);
 		}
-		System.out.print(test);
+		System.out.println(test);
 	}
 
 }
